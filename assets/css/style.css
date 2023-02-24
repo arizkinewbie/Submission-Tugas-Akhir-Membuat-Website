@@ -1,0 +1,213 @@
+/*Font*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: static;
+  margin: auto;
+  width: 100%;
+  background-color: #723434;
+}
+
+nav a:hover {
+  font-weight: bold;
+  transition: 0.7s;
+  color: #757575;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  font-size: 18px;
+  font-weight: 400;
+  float: right;
+}
+
+nav ul li {
+  padding: 15px;
+  display: inline-block;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: justify;
+}
+
+i {
+  padding: 5px;
+}
+
+a,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #723434;
+}
+
+h1 {
+  font-size: 40px;
+  color: #ffffff;
+  display: inline-block;
+  padding: 15px;
+}
+
+h2,
+h3 {
+  text-transform: uppercase;
+  color: #203239;
+}
+
+h2:hover {
+  color: #723434;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+.clear {
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #e6e6e6;
+}
+
+img {
+  width: 30%;
+  padding: 5px;
+  max-height: 250px;
+  object-position: center;
+}
+
+img:hover {
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  box-shadow: 5px 5px 25px #203239;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  text-align: center;
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+aside img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+aside p {
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #723434;
+  font-weight: bold;
+}
+
+footer p {
+  text-align: end;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 110px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  background-color: #203239;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(255, 254, 254);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #0b0b0b;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+button:hover {
+  border: 3px solid #ffffff;
+  color: #000000;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+  #content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  ul,
+  aside img {
+    width: 40%;
+  }
+
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  ul {
+    width: auto;
+  }
+}
